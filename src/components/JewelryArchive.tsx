@@ -17,7 +17,7 @@ const defaultKeyframes = [
   { x: 0, z: 0, cx: 0, cy: 0.4, cz: 2.2, lx: 0, ly: 0, lz: 0, fov: 35, yaw: 0 },
 ];
 
-const WatchArchive: React.FC = () => {
+const JewelryArchive: React.FC = () => {
   const containerRef = useRef<HTMLDivElement>(null);
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const [activeTabIdx, setActiveTabIdx] = useState(0);
@@ -294,13 +294,13 @@ const WatchArchive: React.FC = () => {
         <section className="archive-section h-screen flex items-end p-10 md:p-24 pb-32">
           <div className="max-w-4xl pointer-events-auto">
             <h1 className="text-[clamp(64px,13vw,180px)] font-serif font-light leading-[0.88] tracking-tight">
-              <span className="block text-white/40 font-luxury text-[0.4em] tracking-[0.2em] mb-4">Mastering Time</span>
-              <span className="block text-white">CHRONOS</span>
-              <span className="block monochrome-gradient">PRECISION</span>
+              <span className="block text-gold/60 font-luxury text-[0.4em] tracking-[0.2em] mb-4">Precision 3D Design</span>
+              <span className="block text-white uppercase italic">Digital</span>
+              <span className="block monochrome-gradient">Masterpieces</span>
             </h1>
-            <div className="mt-12 flex flex-col gap-1 items-start">
-              <span className="text-[11px] uppercase tracking-[0.4em] font-medium text-white font-mono">Reference № 729-032</span>
-              <span className="text-[11px] uppercase tracking-[0.16em] text-white/40">Oyster Steel / Perpetual Movement / Sapphire Crystal</span>
+            <div className="mt-12 flex flex-col gap-1 items-start border-l border-gold/40 pl-8">
+              <span className="text-[11px] uppercase tracking-[0.4em] font-medium text-white font-mono">Custom CAD № 882-SHREE</span>
+              <span className="text-[11px] uppercase tracking-[0.16em] text-gold/60">3D Printing Ready / High Polygon Detail / STL & OBJ Export</span>
             </div>
           </div>
         </section>
@@ -309,25 +309,25 @@ const WatchArchive: React.FC = () => {
         <section className="archive-section min-h-screen flex items-center p-10 md:p-24">
           <div className="max-w-xl pointer-events-auto">
             <div className="flex items-center gap-4 mb-8">
-              <div className="w-12 h-px bg-white/40" />
-              <span className="text-[10px] uppercase font-bold tracking-[0.4em] text-white/40">Engineering Excellence</span>
+              <div className="w-12 h-px bg-gold/40" />
+              <span className="text-[10px] uppercase font-bold tracking-[0.4em] text-gold/60">Jewelry Engineering</span>
             </div>
-            <h2 className="text-[clamp(40px,6vw,80px)] font-serif font-light leading-[0.92] tracking-tight text-white mb-10">A Legacy Reimagined</h2>
-            <p className="text-sm leading-[2] text-white/40 max-w-sm mb-12 font-light uppercase tracking-wider">
-              AR Watches Corp represents the pinnacle of horological wholesale. Based in Miami, our flagship boutique offers only the most distinguished timepieces for enthusiasts who demand excellence.
+            <h2 className="text-[clamp(40px,6vw,80px)] font-serif font-light leading-[0.92] tracking-tight text-white mb-10">Crafting the Impossible</h2>
+            <p className="text-sm leading-[2] text-gold/40 max-w-sm mb-12 font-light uppercase tracking-wider">
+              Shree Mould is the premier destination for high-end 3D Jewelry CAD Designs. Based on your imagination, we build digital moulds that define the future of custom jewelry.
             </p>
-            <div className="flex gap-12 mt-12 pt-12 border-t border-white/10">
+            <div className="flex gap-12 mt-12 pt-12 border-t border-gold/10">
               <div className="flex flex-col gap-1">
-                <span className="text-4xl font-serif text-white">72H</span>
-                <span className="text-[10px] uppercase tracking-[0.15em] text-white/30">Reserve</span>
+                <span className="text-4xl font-serif text-white">4K</span>
+                <span className="text-[10px] uppercase tracking-[0.15em] text-gold/30">Resolution</span>
               </div>
               <div className="flex flex-col gap-1">
-                <span className="text-4xl font-serif text-white">100M</span>
-                <span className="text-[10px] uppercase tracking-[0.15em] text-white/30">Depth</span>
+                <span className="text-4xl font-serif text-white">STL</span>
+                <span className="text-[10px] uppercase tracking-[0.15em] text-gold/30">Format</span>
               </div>
               <div className="flex flex-col gap-1">
-                <span className="text-4xl font-serif text-white">COSC</span>
-                <span className="text-[10px] uppercase tracking-[0.15em] text-white/30">Certified</span>
+                <span className="text-4xl font-serif text-white">24h</span>
+                <span className="text-[10px] uppercase tracking-[0.15em] text-gold/30">Turnaround</span>
               </div>
             </div>
           </div>
@@ -337,21 +337,21 @@ const WatchArchive: React.FC = () => {
         <section className="archive-section min-h-screen flex items-center justify-end p-10 md:p-24 text-right">
           <div className="max-w-xl pointer-events-auto">
             <div className="flex items-center gap-4 mb-8 justify-end">
-              <span className="text-[10px] uppercase font-bold tracking-[0.4em] text-white/40">Technical Specs</span>
-              <div className="w-12 h-px bg-white/40" />
+              <span className="text-[10px] uppercase font-bold tracking-[0.4em] text-gold/60">Technical Capabilities</span>
+              <div className="w-12 h-px bg-gold/40" />
             </div>
-            <h2 className="text-[clamp(40px,6vw,80px)] font-serif font-light leading-[0.92] tracking-tight text-white mb-10">Pure Caliber</h2>
+            <h2 className="text-[clamp(40px,6vw,80px)] font-serif font-light leading-[0.92] tracking-tight text-white mb-10">Digital Precision</h2>
             <div className="flex flex-col gap-4">
               {[
-                { label: 'Movement', val: 'Mechanical Self-Winding' },
-                { label: 'Case', val: '41mm Oystersteel' },
-                { label: 'Dial', val: 'Sunray Finish Anthracite' },
-                { label: 'Bracelet', val: 'Oyster Three-Piece Link' },
-                { label: 'Warranty', val: '5 Years Hub-Service' },
+                { label: 'Software', val: 'MatrixGold / Rhino 3D' },
+                { label: 'Detailing', val: 'Micro-Pave Specialists' },
+                { label: 'Files', val: 'STL, OBJ, 3DM, STEP' },
+                { label: 'Print Mode', val: 'High-Res Resin Optimized' },
+                { label: 'Global', val: 'PayPal Secure Global Service' },
               ].map(spec => (
-                <div key={spec.label} className="flex justify-between items-baseline border-b border-white/5 py-5 gap-12 group hover:border-white transition-colors">
-                  <span className="text-[11px] uppercase tracking-[0.2em] text-white/20">{spec.label}</span>
-                  <span className="text-2xl font-serif text-white group-hover:text-silver transition-colors">{spec.val}</span>
+                <div key={spec.label} className="flex justify-between items-baseline border-b border-gold/5 py-5 gap-12 group hover:border-gold transition-colors">
+                  <span className="text-[11px] uppercase tracking-[0.2em] text-gold/20">{spec.label}</span>
+                  <span className="text-2xl font-serif text-white group-hover:text-gold-bright transition-colors">{spec.val}</span>
                 </div>
               ))}
             </div>
@@ -362,21 +362,21 @@ const WatchArchive: React.FC = () => {
         <section className="archive-section min-h-screen flex items-end p-10 md:p-24 pb-40">
           <div className="pointer-events-auto">
             <div className="flex items-center gap-4 mb-8">
-              <div className="w-12 h-px bg-white/40" />
-              <span className="text-[10px] uppercase font-bold tracking-[0.4em] text-white/40">Signature Details</span>
+              <div className="w-12 h-px bg-gold/40" />
+              <span className="text-[10px] uppercase font-bold tracking-[0.4em] text-gold/60">Digital Features</span>
             </div>
-            <h2 className="text-[clamp(40px,6vw,80px)] font-serif font-light leading-[0.92] tracking-tight text-white mb-16">The Architecture</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-px bg-white/5 max-w-lg border border-white/10 backdrop-blur-xl">
+            <h2 className="text-[clamp(40px,6vw,80px)] font-serif font-light leading-[0.92] tracking-tight text-white mb-16">The Digital Mould</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-px bg-gold/5 max-w-lg border border-gold/10 backdrop-blur-xl">
               {[
-                { id: '01', name: 'Laser Etching', desc: 'Precision numerals etched with microscopic accuracy for ultimate legibility.' },
-                { id: '02', name: 'Blue Parachrom', desc: 'A hairspring that offers greater resistance to shocks and temperature variations.' },
-                { id: '03', name: 'Cerachrom Bezel', desc: 'Virtually scratchproof ceramic bezel that remains unaffected by ultraviolet rays.' },
-                { id: '04', name: 'Chromalight', desc: 'A blue glow that provides exceptional visibility in dark conditions.' },
+                { id: '01', name: 'Micro Detailing', desc: 'Precision surfaces optimized for clean casts and perfect prong placement.' },
+                { id: '02', name: 'Stone Mapping', desc: 'Exact stone counts and weight calculations provided for every design.' },
+                { id: '03', name: 'Print Ready', desc: 'Fully manifold meshes guaranteed to print on any high-end resin printer.' },
+                { id: '04', name: 'Iterative Design', desc: 'Fluid design process from imagination to reality with rapid changes.' },
               ].map(item => (
                 <div key={item.id} className="bg-luxury-black/90 p-10 flex flex-col gap-3 group">
-                  <span className="text-[11px] font-serif font-bold text-white tracking-[0.3em] opacity-40 group-hover:opacity-100 transition-opacity">{item.id}</span>
+                  <span className="text-[11px] font-serif font-bold text-gold tracking-[0.3em] opacity-40 group-hover:opacity-100 transition-opacity">{item.id}</span>
                   <h3 className="text-xl font-serif font-medium uppercase tracking-wider text-white">{item.name}</h3>
-                  <p className="text-[11px] leading-[1.8] text-white/30 font-serif tracking-tight">{item.desc}</p>
+                  <p className="text-[11px] leading-[1.8] text-gold/30 font-serif tracking-tight">{item.desc}</p>
                 </div>
               ))}
             </div>
@@ -386,12 +386,12 @@ const WatchArchive: React.FC = () => {
         {/* QUOTE */}
         <section className="archive-section min-h-screen flex flex-col items-center justify-center p-10 text-center">
           <div className="pointer-events-auto">
-            <span className="text-[120px] font-serif text-white/10 leading-[0.6] mb-8 select-none">"</span>
+            <span className="text-[120px] font-serif text-gold/10 leading-[0.6] mb-8 select-none">"</span>
             <p className="text-[clamp(28px,4vw,52px)] font-serif italic font-light leading-[1.1] tracking-tight text-white max-w-3xl mb-12 uppercase">
-              Time is the ultimate luxury. Our mission is to help you measure it with absolute precision and grace.
+              If You Can Imagine It, We Can Create It. Your One Stop Shop For Custom Made Jewelry.
             </p>
-            <p className="text-[10px] uppercase tracking-[0.4em] text-white/30 font-mono">
-              <span className="text-accent font-bold">AR Watches Corp</span> — The Miami Standard
+            <p className="text-[10px] uppercase tracking-[0.4em] text-gold/30 font-mono">
+              <span className="text-gold font-bold">@shree.mould</span> — Digital Artisans
             </p>
           </div>
         </section>
@@ -400,23 +400,23 @@ const WatchArchive: React.FC = () => {
         <section className="archive-section min-h-screen flex items-end p-10 md:p-24 pb-32">
           <div className="w-full pointer-events-auto text-white">
             <div className="flex items-center gap-4 mb-4">
-              <div className="w-12 h-px bg-white/40" />
-              <span className="text-[11px] font-bold tracking-[0.4em] uppercase text-white/40">Private Acquisition</span>
+              <div className="w-12 h-px bg-gold/40" />
+              <span className="text-[11px] font-bold tracking-[0.4em] uppercase text-gold/40">Commission a Design</span>
             </div>
             <h2 className="text-[clamp(60px,12vw,140px)] font-serif font-light leading-[0.85] tracking-tight mb-12">
-              <span className="block text-white">DEFINE</span>
-              <span className="block monochrome-gradient">YOUR TIME</span>
+              <span className="block text-white">BRING IT</span>
+              <span className="block monochrome-gradient">TO LIFE</span>
             </h2>
-            <div className="flex flex-col md:flex-row justify-between items-end gap-12 pt-16 border-t border-white/10">
-              <button className="bg-white text-black px-12 py-6 text-[12px] font-black uppercase tracking-[0.3em] transition-all hover:bg-neutral-200 flex items-center gap-6 group shadow-2xl">
-                Enquire Online
+            <div className="flex flex-col md:flex-row justify-between items-end gap-12 pt-16 border-t border-gold/10">
+              <button className="bg-gold text-black px-12 py-6 text-[12px] font-black uppercase tracking-[0.3em] transition-all hover:bg-gold-bright flex items-center gap-6 group shadow-2xl">
+                Order Custom CAD
                 <motion.span animate={{ x: [0, 8, 0] }} transition={{ repeat: Infinity, duration: 2 }}>
                   →
                 </motion.span>
               </button>
-              <div className="text-[10px] uppercase tracking-[0.2em] text-white/20 text-right leading-[2.5] font-mono">
-                <p>Limited Production - GMT Edition 2026</p>
-                <p>AR Watches Corp © 2026</p>
+              <div className="text-[10px] uppercase tracking-[0.2em] text-gold/20 text-right leading-[2.5] font-mono">
+                <p>PayPal Accepted Globally</p>
+                <p>Shree Mould © 2026</p>
               </div>
             </div>
           </div>
@@ -477,4 +477,4 @@ const WatchArchive: React.FC = () => {
   );
 };
 
-export default WatchArchive;
+export default JewelryArchive;
