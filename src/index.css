@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Outfit:wght@300;400;600;700&family=Space+Grotesk:wght@300;400;500;600;700&family=Barlow+Condensed:wght@700;800;900&family=Inter:wght@300;400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Cormorant Garamond", serif;
+  --font-space: "Space Grotesk", sans-serif;
+  --font-barlow: "Barlow Condensed", sans-serif;
+  --font-inter: "Inter", sans-serif;
+  --color-luxury-black: #0a0c14;
+  --color-luxury-navy: #121826;
+  --color-luxury-grey: #f5f5f5;
+  --color-accent: #c5a059;
+  --color-accent-glow: rgba(197, 160, 89, 0.1);
+  --color-gold: #c5a059;
+  --color-silver: #c0c0c0;
+  --color-monochrome: #080a12;
+}
+
+@layer base {
+  body {
+    background-color: #0a0c14;
+    color: #ffffff;
+    font-family: var(--font-sans);
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-serif);
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #ffffff;
+  }
+}
+
+@utility text-outline {
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.2);
+}
+
+@utility font-luxury {
+  font-family: var(--font-serif);
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+@utility monochrome-gradient {
+  background: linear-gradient(135deg, #ffffff 0%, #a1a1a1 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@utility transition-editorial {
+  transition: all 0.6s cubic-bezier(0.2, 0, 0, 1);
+}
+
+@utility bg-grid-scan {
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 80px 80px;
+}
+
+@utility hud-glow {
+  box-shadow: 0 0 30px var(--color-accent-glow);
+}
+
+@utility corner-bracket {
+  position: relative;
+  &::before, &::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-color: var(--color-accent);
+    opacity: 0.4;
+  }
+  &::before { top: 0; left: 0; border-top: 1px solid; border-left: 1px solid; }
+  &::after { bottom: 0; right: 0; border-bottom: 1px solid; border-right: 1px solid; }
+}
+

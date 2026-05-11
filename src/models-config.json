@@ -1,0 +1,11 @@
+{
+  "placeholder": "https://modelviewer.dev/shared-assets/models/glTF-Sample-Assets/Models/ToyCar/glTF-Binary/ToyCar.glb",
+  "models": {
+    "2025_lamborghini_urus_se.glb": "https://dl.dropboxusercontent.com/scl/fi/74774nxsasm7ce8exwv2r/2025_lamborghini_urus_se.glb?rlkey=sr9urz2j60zg5iz315tyymuf0&st=jrecps2n",
+    "bmw_m4_competition.glb": "https://dl.dropboxusercontent.com/scl/fi/4mhrd6lz3b45ea32atqzc/bmw_m4_competition_2021.glb?rlkey=9nzetwqkp7vbiq3ljruv7r35v&st=pz5l1lvn",
+    "mclaren_570s.glb": "https://dl.dropboxusercontent.com/scl/fi/bpzlu4clgvrhtjhgof21u/mclaren_570s_coupe.glb?rlkey=sslmosxezkod8gqy7f4j66txw&st=d3rsl6pe",
+    "2023_chevrolet_corvette_z06.glb": "https://dl.dropboxusercontent.com/scl/fi/p4yfh2hogv6szwnee96wd/2023_chevrolet_corvette_z06.glb?rlkey=48iy4txmm7tdgngchbfpehl26&st=r0ceoerj"
+  },
+  "cors_fix": "I have changed 'www.dropbox.com' to 'dl.dropboxusercontent.com'. This bypasses the security (CORS) blocks that prevent browsers from loading files from Dropbox.",
+  "instructions": "1. Upload your .glb files to Dropbox. 2. Copy the share link. 3. Paste it above. 4. Change 'www.dropbox.com' to 'dl.dropboxusercontent.com'."
+}

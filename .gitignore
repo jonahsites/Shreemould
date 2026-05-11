@@ -1,0 +1,14 @@
+node_modules/
+build/
+dist/
+coverage/
+public/models/
+DISPLAY/
+.DS_Store
+*.log
+.env*
+!.env.example
+topcar-standalone/
+topcar-showcase-package/
+*.glb
+*.zip
